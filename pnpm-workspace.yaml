@@ -1,8 +1,15 @@
-shellEmulator: true
-
+minimumReleaseAgeExcludePrune: true
 trustPolicy: no-downgrade
 
+update:
+  ignoreDeps:
+    - typescript@7
+
+shellEmulator: true
 packages: []
+
+allowBuilds:
+  simple-git-hooks: true
 
 onlyBuiltDependencies:
   - esbuild
